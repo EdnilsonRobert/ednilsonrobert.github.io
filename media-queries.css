@@ -1,21 +1,28 @@
 /**********************************************************************************************************************
-	Theme Name:  Colored Theme
-	Theme URI:   https://localhost/github/ednilsonrobert.github.io
-	Description: Tema para perfil de Ednilson Robert
-	Version:     2.0
-	Author:      EdnilsonRobert
-	Author URI:  https://github.com/EdnilsonRobert
+    Theme Name:  Colored Theme
+    Theme URI:   https://localhost/github/ednilsonrobert.github.io
+    Description: Tema para perfil de Ednilson Robert
+    Version:     2.0
+    Author:      EdnilsonRobert
+    Author URI:  https://github.com/EdnilsonRobert
 **********************************************************************************************************************/
 
 /**
 * PALETA DE CORES
 * ---------------------------------------------------------------------------------------------------------------------
-* Elephant Grey: #c5d3d9
-* Dark Teal:     #1f8da6
-* Sand Grey:     #736f68
-* Dark Grey:     #293037
-* Burnt Orange:  #d97b29
-* Farmhouse Red: #bf3415
+* Background: #090f17
+*
+* Crimson:    #ad103c
+* Orange:     #fe7c22
+* Green:      #199900
+* Lime:       #91d100
+* Blue:       #2572eb
+*
+* LinkedIn:   #0077b5
+* GitHub:     #171515
+* Outlook:    #0072c6
+* Gmail:      #4285f4
+* Skype:      #00aff0
 *
 *
 * CSS INDEX
@@ -30,79 +37,37 @@
 /**
 * ACIMA DE 480px
 * ---------------------------------------------------------------------------------------------------------------------
-*
+*/
 @media screen and (min-width: 30rem) {
-	/** NAVEGAÇÃO ---------------------------------------------------------- *
+	/** NAVEGAÇÃO ---------------------------------------------------------- */
 	#main-navigation ul li {
-		margin: 0 1.6rem 0;
+		margin: 0 2.4rem 0;
 	}
 
-	#main-navigation ul li a {
-		font-size: 1.6rem;
-		line-height: 4.8rem;
-	}
+	/** DOCUMENTO ---------------------------------------------------------- */
+    .common-list {
+        margin-left: 3.6rem;
+    }
 
-	/** PORTFÓLIO ---------------------------------------------------------- *
-	#portfolio-slider {
-		padding: 1.2rem 0 0;
-	}
+    .desc-list {
+    	margin-left: 3.6rem;
+    }
 
-	#portfolio-slider figure {
-		margin: 0 1.2rem 0;
-	}
-
-	#portfolio-slider .job-info div {
-		margin: 2.4rem 1.2rem 0;
-	}
-
-	#portfolio-slider .job-info div ul li .job-label {
-		float: left;
-		width: 13rem;
-	}
-
-	#portfolio-slider .job-info div ul li .job-label + span {
-		overflow: hidden;
-		margin: 0 0 0;
-	}
-
-	/** CURRÍCULO ---------------------------------------------------------- *
-	.timeline figcaption {
-		text-align: center;
-	}
-
-	.timeline figcaption span {
-		display: inline-block;
-		margin: 0 1.2rem 0;
-	}
-
-	.author-skills li {
+	/** CURRÍCULO ---------------------------------------------------------- */
+	.hot-skills li {
 		float: left;
 		width: 50%;
 		margin: 2.4rem 0 2.4rem;
 	}
 
-	.author-skills li:nth-child(2n+1) {
+	.hot-skills li:nth-child(2n+1) {
 		clear: both;
 	}
 
-	/** CONTATO ------------------------------------------------------------ *
-	.contact-label {
-		display: inline-block;
-		width: 12rem;
-		text-align: right;
-	}
-
-	.contact-list li i {
-		width: 2rem;
-		margin-left: 0.7rem;
-		text-align: center;
-	}
-
-	.contact-list li a {
-		display: inline-block;
-		margin-left: 0.7rem;
-		word-wrap: break-word;
-	}
+	/** REDES SOCIAIS E CONTATOS ------------------------------------------- */
+    .contact-list {
+    	margin-left: 3.6rem;
+    }
 }
 
 
@@ -110,9 +75,9 @@
 /**
 * ACIMA DE 640px
 * ---------------------------------------------------------------------------------------------------------------------
-*
+*/
 @media screen and (min-width: 40rem) {
-	/** HEADER ------------------------------------------------------------- *
+	/** HEADER ------------------------------------------------------------- */
 	.author-avatar {
 		float: left;
 		margin: 0 4.8rem 0 0;
@@ -136,63 +101,31 @@
 		text-align: left;
 	}
 
-	/** NAVEGAÇÃO ---------------------------------------------------------- *
-	#main-navigation ul li {
-		margin: 0 2.4rem 0;
-	}
+	/** DOCUMENTO ---------------------------------------------------------- */
+    .common-list {
+        margin-left: 4.8rem;
+    }
 
-	/** PORTFÓLIO ---------------------------------------------------------- *
-	#portfolio-slider figure {
-		margin: 1.2rem 2.4rem 0;
-	}
+    .desc-list {
+    	margin-left: 4.8rem;
+    }
 
-	#portfolio-slider .job-info div {
-		margin: 2.4rem 2.4rem 0;
-	}
+	/** REDES SOCIAIS E CONTATOS ------------------------------------------- */
+    .social-networks,
+    .contact-list {
+    	float: left;
+    	width: 50%;
+    	margin: 2.4rem 0 7.2rem;
+    	padding: 0 0 0 4.8rem;
+    }
 
-	#portfolio-slider .job-info div h3 {
-		font-size: 3.6rem;
-		line-height: 4.8rem;
-	}
+    .social-networks li a {
+    	margin: 0 auto 0 0;
+    }
 
-	#portfolio-slider .job-info div h3 span {
-		display: block;
-		font-size: 1.8rem;
-		line-height: 2.4rem;
-	}
-
-	/** CURRÍCULO ---------------------------------------------------------- *
-	.author-overview,
-	.plain-text,
-	.desc-list {
-		margin-left: 4.8rem;
-	}
-
-	.commom-list {
-		margin-left: 4.8rem;
-	}
-
-	.desc-list ul {
-		margin-left: 4.8rem;
-	}
-
-	.author-professional-experience dd span {
-		margin-left: 4.8rem;
-	}
-
-	/** ASIDE -------------------------------------------------------------- *
-	.social-networks {
-		margin: 6.0rem 0 0;
-	}
-
-	.social-networks li:nth-child(2) {
-		margin: 0 2.4rem 0;
-	}
-
-	.social-networks li {
-		display: inline-block;
-		margin: 0 2.4rem 0;
-	}
+    .contact-list li {
+    	margin: 0 0 2.4rem;
+    }
 }
 
 
@@ -200,113 +133,36 @@
 /**
 * ACIMA DE 800px
 * ---------------------------------------------------------------------------------------------------------------------
-*
+*/
 @media screen and (min-width: 50rem) {
-	/** NAVEGAÇÃO ---------------------------------------------------------- *
+	/** HEADER ------------------------------------------------------------- */
+    #masthead {
+        padding: 7.2rem 0 7.2rem;
+    }
+
+	/** NAVEGAÇÃO ---------------------------------------------------------- */
 	#main-navigation ul li {
 		margin: 0 3.6rem 0;
 	}
 
-	/** DOCUMENTO ---------------------------------------------------------- *
-	main {
-		margin: 36rem 0 0;
-	}
+	/** DOCUMENTO ---------------------------------------------------------- */
+    .section-box {
+        padding: 9.6rem 0 9.6rem;
+    }
 
-	.section-title {
-		position: absolute;
-		right: 100%;
-		top: -6.2rem;
-		margin: 0 0 0;
-		padding: 0 4.8rem 0;
-		border-radius: 3.6rem 0 0 3.6rem;
-		background-color: #d97b29;
-		font-weight: 300;
-		font-size: 3.6rem;
-		line-height: 7.2rem;
-		-moz-transform: rotate(270deg);
-		-ms-transform: rotate(270deg);
-		-webkit-transform: rotate(270deg);
-		transform: rotate(270deg);
-		-moz-transform-origin: right top;
-		-ms-transform-origin: right top;
-		-webkit-transform-origin: right top;
-		transform-origin: right top;
-	}
-
-	/** PORTFÓLIO ---------------------------------------------------------- *
-	#portfolio {
-		padding: 6.0rem 0 6.0rem;
-	}
-
-	#portfolio .wrapper {
-		padding-left: 9.6rem;
-	}
-
-	/** CURRÍCULO ---------------------------------------------------------- *
-	#curriculum {
-		margin: 36rem 0 0;
-		padding: 6.0rem 0 6.0rem;
-	}
-
-	#curriculum .wrapper {
-		padding-left: 9.6rem;
-	}
-
-	.author-skills li {
+	/** CURRÍCULO ---------------------------------------------------------- */
+	.hot-skills li {
 		float: left;
 		width: 33.33%;
 		margin: 2.4rem 0 2.4rem;
 	}
 
-	.author-skills li:nth-child(2n+1) {
+	.hot-skills li:nth-child(2n+1) {
 		clear: none;
 	}
 
-	.author-skills li:nth-child(3n+1) {
+	.hot-skills li:nth-child(3n+1) {
 		clear: both;
-	}
-
-	/** ASIDE -------------------------------------------------------------- *
-	#redes-sociais {
-		margin: 36rem 0 0;
-		padding: 6.0rem 0 6.0rem;
-	}
-
-	.social-networks li:nth-child(2) {
-		margin: 0 4.8rem 0;
-	}
-
-	.social-networks li {
-		margin: 0 4.8rem 0;
-	}
-
-	/** CONTATO ------------------------------------------------------------ *
-	#contato {
-		padding: 6.0rem 0 6.0rem;
-	}
-
-	#contato .wrapper {
-		padding-left: 12rem;
-	}
-
-	.form-area,
-	.contacts-area {
-		float: left;
-		width: 50%;
-	}
-
-	.form-area     {padding-right: 2.4rem;}
-	.contacts-area {padding-left:  2.4rem;}
-
-	.contact-label {
-		display: block;
-		width: inherit;
-		text-align: left;
-	}
-
-	.contact-list li i {
-		width: 2rem;
-		margin-left: 2.4rem;
 	}
 }
 
@@ -315,26 +171,39 @@
 /**
 * ACIMA DE 960px
 * ---------------------------------------------------------------------------------------------------------------------
-*
+*/
 @media screen and (min-width: 60rem) {
-	/** HEADER ------------------------------------------------------------- *
+	/** RESET -------------------------------------------------------------- */
+    body {
+        background: #090f17 url("images/html-code.jpg") no-repeat fixed center top;
+        background-size: cover;
+        color: #272727;
+    }
+
+	/** HEADER ------------------------------------------------------------- */
 	.author-name {
 		font-size: 6.0rem;
 		line-height: 7.2rem;
 	}
 
-	/** CONTATO ------------------------------------------------------------ *
-	.contact-label {
-		display: inline-block;
-		width: 10rem;
-		text-align: right;
+	/** DOCUMENTO ---------------------------------------------------------- */
+	main {
+		margin: 36rem 0 0;
 	}
 
-	.contact-list li i {
-		width: 2rem;
-		margin-left: 0.7rem;
-		text-align: center;
+	/** CURRÍCULO ---------------------------------------------------------- */
+    #author-professional-summary::before {
+        display: none;
+    }
+
+	/** REDES SOCIAIS E CONTATOS ------------------------------------------- */
+	#author-network {
+		margin: 36rem 0 0;
 	}
+
+    #author-network::before {
+        display: none;
+    }
 }
 
 
@@ -342,50 +211,22 @@
 /**
 * ACIMA DE 1024px
 * ---------------------------------------------------------------------------------------------------------------------
-*
+*/
 @media screen and (min-width: 64rem) {
-	/** DOCUMENTO ---------------------------------------------------------- *
-	main {
-		margin: 48rem 0 0;
-	}
-
+	/** RESET -------------------------------------------------------------- */
 	.wrapper {
-		width: 96rem;
+		max-width: 96rem;
 		margin: 0 auto 0;
 	}
 
-	.section-title {
-		border-radius: 4.8rem 0 0 4.8rem;
-		font-size: 6.0rem;
-		line-height: 9.6rem;
+	/** DOCUMENTO ---------------------------------------------------------- */
+	main {
+		margin: 60rem 0 0;
 	}
 
-	/** PORTFÓLIO ---------------------------------------------------------- *
-	#portfolio .wrapper {
-		padding-left: 12rem;
-	}
-
-	/** CURRÍCULO ---------------------------------------------------------- *
-	#curriculum {
-		margin: 48rem 0 0;
-	}
-
-	#curriculum .wrapper {
-		padding-left: 12rem;
-	}
-
-	/** ASIDE -------------------------------------------------------------- *
-	#redes-sociais {
-		margin: 48rem 0 0;
-	}
-
-	/** CONTATO ------------------------------------------------------------ *
-	#contato .wrapper {
-		padding-left: 16rem;
-	}
-
-	#contato {
-		margin: 48rem 0 0;
+	/** REDES SOCIAIS E CONTATOS ------------------------------------------- */
+	#author-network {
+		margin: 60rem 0 0;
 	}
 }
 
