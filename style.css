@@ -330,6 +330,10 @@
         vertical-align: middle;
     }
 
+    .desc-list dt:not(:first-child) {
+        margin: 2.4rem 0 0;
+    }
+
     .desc-list dt {
         font-weight: 400;
     }
