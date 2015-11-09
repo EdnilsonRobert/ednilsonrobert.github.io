@@ -1,0 +1,86 @@
+.masthead {
+    padding-top: 10.8rem;
+
+    .wrapper {
+        max-width: 98rem;
+    }
+
+    .author-name {
+        overflow: hidden;
+        margin: 0 0 1.2rem;
+        font-weight: 300;
+        font-size: 3.6rem;
+        font-family: Oxygen;
+        line-height: 1;
+        text-align: center;
+
+        @media(min-width:50rem) {
+            font-size: 4.8rem;
+            text-align: left;
+        }
+    }
+
+    .author-job-title {
+        overflow: hidden;
+        margin: 0 0 2.4rem;
+        font-weight: 300;
+        font-size: 1.8rem;
+        font-family: Oxygen;
+        line-height: 1;
+        text-align: center;
+
+        @media(min-width:50rem) {
+            font-size: 2.4rem;
+            text-align: left;
+        }
+    }
+
+    .author-profile {
+        overflow: hidden;
+
+        code {
+            font-weight: 700;
+            font-family: Courier, 'Courier New', monospace;
+            -webkit-animation: cursor 700ms linear 100ms infinite;
+            animation: cursor 700ms linear 100ms infinite;
+        }
+    }
+
+    @-webkit-keyframes cursor {
+        0%   { opacity: 1; }
+        33%  { opacity: 0; }
+        66%  { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    @keyframes cursor {
+        0%   { opacity: 1; }
+        33%  { opacity: 0; }
+        66%  { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    .author-avatar {
+        display: block;
+
+        &::before {
+            content: "E";
+            display: block;
+            width: 12.0rem;
+            height: 12.0rem;
+            margin: 0 auto 1.2rem;
+            .border-radius(50%);
+            background-color: rgba(234, 234, 234, 0.25);
+            font-weight: 700;
+            font-size: 9.6rem;
+            line-height: 1.2;
+            text-align: center;
+            color: rgba(234, 234, 234, 1);
+        }
+
+        @media(min-width:50rem) {
+            float: left;
+            margin-right: 3.6rem;
+        }
+    }
+}
