@@ -1,0 +1,376 @@
+/*******************************************************************************
+    Theme Name:  Orange Theme
+    Theme URI:   http://localhost:8080/github-io
+    Description: Theme for Ednilson Robert's profile
+    Version:     3.0
+    Author:      EdnilsonRobert
+    Author URI:  https://github.com/EdnilsonRobert
+*******************************************************************************/
+
+/* VARIABLES ---------------------------------------------------------------- */
+:root {
+  --blue-dark:    #212f3c;
+  --blue-light:   #33a9dc;
+  --crimson:      #dc143c;
+  --gold:         #f1c40f;
+  --lime:         #00ff7f;
+  --orange:       #d35400; /* ea6147 */
+  --orange-light: #ef652a;
+  --purple:       #5c258d;
+  --white:        #d6dbdf; /* f5f5f5 */
+  --yellow:       #f8dc3d;
+
+  --color-html:     var(--orange-light);
+  --color-css:      var(--blue-light);
+  --color-js:       var(--yellow);
+  --color-terminal: var(--lime);
+
+  --button-border-gray:     #aeb6bf;
+  --button-background-gray: #ebedef;
+
+  --dark-shadow:  rgba(0,0,0,.1);
+  --light-shadow: rgba(255,255,255,.5);
+
+  --space-base:        2.4rem;
+  --common-spacing:    var(--space-base);
+  --half-spacing:      calc( var(--space-base) / 2 );
+  --onethird-spacing:  calc( var(--space-base) / 3 );
+  --double-spacing:    calc( var(--space-base) * 2 );
+  --threefold-spacing: calc( var(--space-base) * 3 );
+  --fourfold-spacing:  calc( var(--space-base) * 4 );
+  --fivefold-spacing:  calc( var(--space-base) * 5 );
+
+  --radius: 6px;
+
+  --font-sans-stack: 'Oxygen', 'Noto Sans', 'Arial', sans-serif;
+
+  --font-size-base:   1.6rem;
+  --line-height-base: 2.4rem;
+
+  --small-phones: 22.5em;
+}
+
+/* RESET -------------------------------------------------------------------- */
+html,body,main,
+article,aside,div,figure,figcaption,footer,header,nav,picture,section,
+h1,h2,h3,hr,p,
+a,abbr,b,code,i,mark,span,time,
+ol,ul,li,
+img,svg {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* WIREFRAME ---------------------------------------------------------------- */
+html, body, main {
+  min-height: 100vh;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-sans-stack);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: var(--white);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--blue-dark);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@media (min-width: 64em) {
+  main { flex-direction: row; }
+}
+
+/* GENERIC ------------------------------------------------------------------ */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 200ms linear;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+  text-decoration: none;
+  cursor: help;
+}
+
+b { font-weight: lighter; }
+
+code {
+  font-weight: 700;
+  font-family: var(--font-mono-stack);
+  animation: cursor 700ms linear 100ms infinite;
+}
+
+h1, h2, h3 { font-weight: 300; }
+h1         { font-size: 3.6rem; line-height: 4.8rem; }
+h2         { font-size: 2.4rem; line-height: 3.6rem; }
+h3         { font-size: 1.8rem; line-height: 2.4rem; }
+
+hr {
+  width: auto;
+  height: 1px;
+  margin: var(--double-spacing);
+  border: none;
+  background-color: var(--dark-shadow);
+  box-shadow: 0 1px 1px var(--light-shadow);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: none;
+  -ms-interpolation-mode: bicubic;
+}
+
+ol { list-style: none; }
+
+p { word-wrap: break-word; }
+
+ul { list-style: none; }
+
+/* ELEMENTS ----------------------------------------------------------------- */
+.anchor-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  border-radius: var(--radius);
+  background-color: var(--button-background-gray);
+  color: var(--blue-dark);
+}
+.anchor-button:hover { background-color: var(--orange-light); }
+
+.anchor-button .fa-fw {
+  width: 9.6rem;
+  font-size: 6rem;
+  line-height: 9.6rem;
+}
+
+.anchor-button span {
+  flex-grow: 1;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.anchor-button b {
+  display: block;
+  font-size: 2.4rem;
+  line-height: 1;
+}
+
+.img-rounded { border-radius: 50%; }
+.img-squared { border-radius: 4px; }
+
+.img-sticker {
+  border: 5px solid var(--white);
+  box-shadow: 0 5px 5px rgba(0,0,0,.5);
+}
+
+.section-title {
+  margin-bottom: var(--common-spacing);
+  font-size: 3.6rem;
+  line-height: 4.8rem;
+  color: var(--orange);
+}
+
+.wrapper {
+  padding: 0 var(--double-spacing);
+}
+
+/* COL-ICONS ---------------------------------------------------------------- */
+.toolbar-dark {
+  padding: var(--onethird-spacing);
+  background-color: var(--blue-dark);
+}
+@media (min-width: 64em) {
+  .toolbar-dark { padding: var(--threefold-spacing) 0 0; }
+}
+
+.col-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+@media (min-width: 64em) {
+  .col-icons {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 6rem;
+  }
+}
+@media (min-width: 75em) {
+  .col-icons {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 9.6rem;
+  }
+}
+
+.col-icons .fab, .col-icons .fas {
+  width: 3.6rem;
+  height: 3.6rem;
+  line-height: 3.6rem;
+}
+@media (min-width: 64em) {
+  .img-squared { margin-bottom: var(--common-spacing); }
+}
+@media (min-width: 64em) {
+  .col-icons .fab, .col-icons .fas {
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
+  }
+}
+
+.col-icons .fa-html5     { font-size: 2.8rem; background-color: var(--color-html); }
+.col-icons .fa-css3-alt  { font-size: 2.8rem; background-color: var(--color-css); }
+.col-icons .fa-js-square { font-size: 2.8rem; background-color: var(--color-js); }
+.col-icons .fa-terminal  { font-size:   2rem; background-color: var(--color-terminal); }
+@media (min-width: 64em) {
+  .col-icons .fa-html5     { font-size: 3.6rem; }
+  .col-icons .fa-css3-alt  { font-size: 3.6rem; }
+  .col-icons .fa-js-square { font-size: 3.6rem; }
+  .col-icons .fa-terminal  { font-size: 2.8rem; }
+}
+
+.col-icons .fa-html5,
+.col-icons .fa-css3-alt {
+  color: var(--white);
+}
+
+/* COL-AVATAR --------------------------------------------------------------- */
+.col-avatar {
+  padding: var(--common-spacing) 0;
+  background: var(--orange) url('../images/pattern-h.svg') no-repeat left bottom;
+  background-size: cover;
+}
+@media (min-width: 36em) {
+  .col-avatar {
+    padding: var(--double-spacing) 0;
+  }
+}
+@media (min-width: 64em) {
+  .col-avatar {
+    width: 36rem;
+    padding: var(--threefold-spacing) 0 0;
+    background-image: url('../images/pattern-v.svg');
+  }
+}
+
+.col-avatar .img-rounded {
+  width: 16rem;
+  margin: 0 auto 0;
+}
+@media (min-width: 36em) {
+  .col-avatar .img-rounded { width: 20rem; }
+}
+@media (min-width: 75em) {
+  .col-avatar .img-rounded { width: 24rem; }
+}
+
+/* COL-CONTENT -------------------------------------------------------------- */
+@media (min-width: 36em) {
+  .col-content { flex-grow: 1; }
+}
+
+.masthead {
+  padding: var(--double-spacing);
+  background-color: var(--blue-dark);
+  color: var(--white);
+}
+@media (min-width: 36em) {
+  .masthead { padding: var(--threefold-spacing) var(--double-spacing); }
+}
+
+.author-job-title {
+  margin-top: var(--half-spacing);
+}
+
+.masthead p {
+  max-width: 72rem;
+  margin-top: var(--double-spacing);
+  font-size: 1.8rem;
+  line-height: var(--line-height-base);
+  opacity: .5;
+}
+
+.author-network {
+  margin-top: var(--threefold-spacing);
+}
+
+@media (min-width: 48em) {
+  .social-networks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 64rem;
+    margin: 0 auto;
+  }
+}
+
+.social-networks li {
+  display: block;
+  max-width: 24rem;
+  margin: 0 auto;
+  padding: var(--half-spacing) 0;
+}
+@media (min-width: 48em) {
+  .social-networks li { width: 24rem; }
+}
+
+.contact-list a:hover {
+  color: var(--orange);
+}
+
+.link-mail .fa-envelope {
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+
+.link-mail span {
+  display: inline-block;
+  margin-left: var(--half-spacing);
+  font-size: 1.8rem;
+  line-height: 3.6rem;
+  vertical-align: top;
+}
+
+.colophon {
+  margin-top: var(--threefold-spacing);
+  background-color: var(--blue-dark);
+}
+
+.colophon p {
+  font-size: 1.2rem;
+  line-height: 4;
+  text-align: center;
+  color: var(--white);
+  opacity: .5;
+}
+
+/* HELPERS ------------------------------------------------------------------ */
+@keyframes cursor {
+  0%   { opacity: 1; }
+  33%  { opacity: 0; }
+  66%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* END OF DOCUMENT ---------------------------------------------------------- */
