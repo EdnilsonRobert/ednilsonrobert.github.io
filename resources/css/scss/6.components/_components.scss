@@ -1,0 +1,169 @@
+// COMPONENTES -----------------------------------------------------------------
+.featured-container {
+    padding: 4.8rem 0;
+    background-color: $slate;
+    color: $snow;
+
+    .text-common { opacity: .5; }
+}
+@media (min-width: 40em) {
+    .featured-container {
+        padding: 6rem 0;
+    }
+}
+@media (min-width: 48em) {
+    .featured-container {
+        padding: 9.6rem 0;
+    }
+}
+
+.media-centered {
+    width: 12rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+}
+@media (min-width: 48em) {
+    .media-centered {
+        width: 24rem;
+        margin-bottom: 2.4rem;
+    }
+}
+
+.content-block {
+    padding: 4.8rem 0;
+    background-color: $deep-blue;
+    box-shadow: inset 0 5px 5px rgba(0,0,0,0.5),
+                inset 0 -5px 5px rgba(0,0,0,0.5);
+
+    .section-title {
+        margin-bottom: 2.4rem;
+        font-size: 2.4rem;
+        text-align: center;
+        color: $snow;
+        opacity: .25;
+    }
+}
+@media (min-width: 40em) {
+    .content-block {
+        padding: 6rem 0;
+
+        .section-title {
+            margin-bottom: 4.8rem;
+            font-size: 3.2rem;
+        }
+    }
+}
+@media (min-width: 48em) {
+    .content-block {
+        padding: 9.6rem 0;
+    }
+}
+
+.image-link {
+    display: block;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.buttons-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24rem;
+    margin: 2.4rem auto;
+    padding: 1.2rem 0;
+    border-radius: .6rem;
+    border: 1px solid $deep-blue;
+    background-color: $slate;
+    box-shadow: inset 0 1px rgba(255,255,255,.33),
+                0 3px 2px 0 rgba(0,0,0,.25);
+    color: $snow;
+
+    small { font-size: 1.4rem; line-height: 2.4rem; }
+    span  { font-size: 1.8rem; line-height: 2.4rem; }
+
+    small { opacity: .5;}
+}
+@media (min-width: 48em) {
+    .button {
+        width: 36rem;
+        margin: 4.8rem auto;
+        padding: 2.4rem 0;
+        border-radius: .6rem;
+
+        small { font-size: 1.8rem; line-height: 2.4rem; }
+        span  { font-size: 2.4rem; line-height: 3.2rem; }
+    }
+}
+
+.button:hover,
+.button:active {
+    box-shadow: inset 0 3px 3px rgba(0,0,0,.5),
+                0 2px 0 0 rgb(255,255,255);
+}
+
+.colophon {
+    padding: 4.8rem 0;
+    border-bottom: 10px solid $slate;
+}
+@media (min-width: 40em) {
+    .colophon {
+        padding: 6rem 0;
+    }
+}
+@media (min-width: 48em) {
+    .colophon {
+        padding: 9.6rem 0;
+    }
+}
+
+.splash-screen {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: $slate;
+    animation-name: hide;
+    animation-duration: 3000ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.splash-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-icon {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba($snow, .25);
+    border-top-color: $snow;
+    animation: rotate 1000ms linear 100ms infinite;
+}
+
+.loading-text {
+    margin-top: 2.4rem;
+    font-size: 2.4rem;
+    color: $snow;
+    opacity: .5;
+}

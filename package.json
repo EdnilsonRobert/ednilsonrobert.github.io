@@ -1,0 +1,17 @@
+{
+  "name": "ednilson.github.io",
+  "version": "4.0.0",
+  "description": "Página pessoal de Ednilson Robert",
+  "main": "index.js",
+  "repository": "https://github.com/EdnilsonRobert/ednilsonrobert.github.io.git",
+  "author": "Ednilson Robert <ednilsonrobert@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-rename": "^1.3.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}

@@ -1,0 +1,32 @@
+// ELEMENTOS -------------------------------------------------------------------
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 200ms linear;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+  text-decoration: none;
+  cursor: help;
+}
+
+code {
+  font-family: inherit;
+  animation: cursor 700ms linear 100ms infinite;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: none;
+    -ms-interpolation-mode: bicubic;
+}
+
+p { word-wrap: break-word; }
