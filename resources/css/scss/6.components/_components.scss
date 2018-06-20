@@ -4,7 +4,7 @@
     background-color: $slate;
     color: $snow;
 
-    .text-common { opacity: .5; }
+    .text-common { opacity: .75; }
 }
 @media (min-width: 40em) {
     .featured-container {
@@ -40,7 +40,7 @@
         font-size: 2.4rem;
         text-align: center;
         color: $snow;
-        opacity: .25;
+        opacity: .5;
     }
 }
 @media (min-width: 40em) {
@@ -90,7 +90,7 @@
     small { font-size: 1.4rem; line-height: 2.4rem; }
     span  { font-size: 1.8rem; line-height: 2.4rem; }
 
-    small { opacity: .5;}
+    small { opacity: .75;}
 }
 @media (min-width: 48em) {
     .button {
