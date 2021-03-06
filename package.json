@@ -1,18 +1,20 @@
 {
   "name": "ednilson.github.io",
-  "version": "4.0.0",
+  "version": "4.2.1",
   "description": "Página pessoal de Ednilson Robert",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "repository": "https://github.com/EdnilsonRobert/ednilsonrobert.github.io.git",
-  "author": "Ednilson Robert <ednilsonrobert@gmail.com>",
+  "scripts": {
+    "dev": "gulp default"
+  },
+  "author": "EdnilsonRobert <frontend@ednilsonrobert.dev>",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-dart-sass": "^0.9.1",
+    "gulp-notify": "^3.2.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sourcemaps": "^2.6.5"
-  },
-  "dependencies": {}
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0"
+  }
 }

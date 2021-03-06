@@ -20,58 +20,58 @@
     <meta name="mobileoptimized"        content="320">
     <meta name="format-detection"       content="telephone=no">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color"            content="#2e4053">
+    <meta name="theme-color"            content="#042d51">
 
     <!-- Favicon -->
     <link rel="icon" href="./favicon.svg">
 
     <!-- Folhas de estilo -->
-    <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet" media="screen">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="./resources/css/styles.min.css" rel="stylesheet" media="screen">
 
     <!-- Manifesto -->
     <link rel="manifest" href="./manifest.webmanifest">
 
-    <link rel="canonical" href="https://ednilsonrobert.github.io/">
+    <!-- <link rel="canonical" href="https://ednilsonrobert.github.io/"> -->
 </head>
 
 <body>
-    <main class="page">
+    <main class="page flex-column">
 
-        <header class="featured-container">
-            <div class="container">
-                <figure class="media-centered">
-                    <img title="Ednilson avatar" class="image-rounded image-sticker" src="./resources/images/avatar.jpg" alt="avatar-spiderman" itemprop="image">
-                </figure>
-                <h1 class="text-large" itemprop="name">Ednilson Robert</h1>
-                <h2 class="text-medium" itemprop="jobTitle">Desenvolvedor Web Front-end</h2>
-                <p class="text-common" itemprop="description">
-                    Desenvolvedor Web front-end apaixonado por <abbr title="HyperText Markup Language">HTML</abbr> e Web Standards.
-                    <br>
-                    Interesse por desenvolvimento Web, engenharia de software, desenvolvimento ágil, computação evolutiva e novas tecnologias.<code>_</code>
-                </p>
-            </div>
+        <header class="banner flex-center">
+            <figure class="brand">
+                <svg viewBox="0 0 256 256" class="brand-image">
+                    <g>
+                        <path d=" M 155.826 122.435 L 244.87 122.435 C 251.013 122.435 256 127.422 256 133.565 L 256 222.609 C 256 228.752 251.013 233.739 244.87 233.739 L 155.826 233.739 C 149.683 233.739 144.696 228.752 144.696 222.609 L 144.696 133.565 C 144.696 127.422 149.683 122.435 155.826 122.435 Z " fill="rgb(81,179,92)"/>
+                        <path d=" M 33.391 144.696 L 122.435 144.696 C 128.578 144.696 133.565 149.683 133.565 155.826 L 133.565 244.87 C 133.565 251.013 128.578 256 122.435 256 L 33.391 256 C 27.248 256 22.261 251.013 22.261 244.87 L 22.261 155.826 C 22.261 149.683 27.248 144.696 33.391 144.696 Z " fill="rgb(46,131,195)"/>
+                        <path d=" M 133.565 0 L 222.609 0 C 228.752 0 233.739 4.987 233.739 11.13 L 233.739 100.174 C 233.739 106.317 228.752 111.304 222.609 111.304 L 133.565 111.304 C 127.422 111.304 122.435 106.317 122.435 100.174 L 122.435 11.13 C 122.435 4.987 127.422 0 133.565 0 Z " fill="rgb(255,205,54)"/>
+                        <path d=" M 11.13 22.261 L 100.174 22.261 C 106.317 22.261 111.304 27.248 111.304 33.391 L 111.304 122.435 C 111.304 128.578 106.317 133.565 100.174 133.565 L 11.13 133.565 C 4.987 133.565 0 128.578 0 122.435 L 0 33.391 C 0 27.248 4.987 22.261 11.13 22.261 Z " fill="rgb(220,20,60)"/>
+                    </g>
+                </svg>
+            </figure>
         </header>
 
-        <section class="content-block">
-            <div class="container">
-                <h2 class="section-title">Website</h2>
-                <a title="Ver CSS.Cafe" class="image-link" href="https://css.cafe/" rel="external noopener" target="_blank" itemprop="url">
-                    <img title="https://css.cafe/" src="./resources/images/css-cafe-logo.svg" alt="CSS.Cafe">
-                </a>
-            </div>
-        </section>
+        <article class="container flex-center">
+            <h1 class="text-display text-large" itemprop="name">Ednilson Robert</h1>
+            <h2 class="caption to-uppercase text-ghost-50" itemprop="jobTitle">Desenvolvedor Web Front-end</h2>
+            <p class="caption to-uppercase text-ghost-50" itemprop="address">Barueri, Brasil</p>
+            <p class="text-common" itemprop="description">
+                Interesse por desenvolvimento Web, engenharia de software, desenvolvimento ágil, computação evolutiva e novas tecnologias.<code>_</code>
+            </p>
+        </article>
 
-        <footer class="colophon">
-            <div class="container">
-                <nav class="buttons-group">
-                    <a title="Ver perfil no GitHub" class="button" href="https://github.com/EdnilsonRobert" rel="external noopener" target="_blank" itemprop="url">
-                        <small>Ver projetos no</small> <span>GitHub</span>
-                    </a>
-                    <a title="Enviar email" class="button" href="mailto:have.fun@css.cafe" itemprop="email">
-                        <small>Enviar email para</small> <span>have.fun@css.cafe</span>
-                    </a>
-                </nav>
+        <footer class="toolbar">
+            <div class="bottom-navigation grid">
+                <a class="caption flex-center to-uppercase" title="Visitar https://ednilsonrobert.dev" href="https://ednilsonrobert.dev/" target="_blank" rel="external noopener" itemprop="url">
+                    Website
+                </a>
+                <a class="caption flex-center to-uppercase" title="Ver perfil no GitHub" href="https://github.com/EdnilsonRobert" target="_blank" rel="external noopener" itemprop="url">
+                    GitHub
+                </a>
+                <a class="caption flex-center to-uppercase" title="Enviar email" href="mailto:frontend@ednilsonrobert.dev" itemprop="email">
+                    Email
+                </a>
             </div>
         </footer>
 
