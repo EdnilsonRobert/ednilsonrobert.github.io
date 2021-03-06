@@ -134,9 +134,14 @@ body {
     max-width: 60rem;
     margin: 0 auto;
 
-    a {
-        height: 4.4rem;
+    .caption {
+        padding: .6rem 0;
         color: $white;
+    }
+
+    ion-icon.caption-icon {
+        font-weight: 400;
+        font-size: 3.2rem;
     }
 }
 
