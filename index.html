@@ -5,83 +5,84 @@
     <title>Ednilson Robert | Desenvolvedor Web Front-end</title>
 
     <!-- Robots -->
-    <meta name="description"   content="Ednilson Robert, desenvolvedor Web front-end apaixonado por Desenvolvimento Web e Web Standards">
-    <meta name="keywords"      content="desenvolvimento, web, front-end, perfil">
-    <meta name="robots"        content="index, follow">
+    <meta name="description" content="Ednilson Robert, desenvolvedor Web front-end apaixonado por Desenvolvimento Web e Web Standards">
+    <meta name="keywords" content="desenvolvimento, web, front-end, perfil">
+    <meta name="robots" content="index, follow">
     <meta name="revisit-after" content="15 days">
-    <meta name="google"        content="notranslate">
+    <meta name="google" content="notranslate">
 
     <!-- Humanos -->
     <meta name="author" content="Ednilson Robert">
 
     <!-- Navegadores -->
-    <meta name="viewport"               content="width=device-width, initial-scale=1.0">
-    <meta name="handheldfriendly"       content="true">
-    <meta name="mobileoptimized"        content="320">
-    <meta name="format-detection"       content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="handheldfriendly" content="true">
+    <meta name="mobileoptimized" content="320">
+    <meta name="format-detection" content="telephone=no">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color"            content="#042d51">
+    <meta name="theme-color" content="#22303d">
 
     <!-- Favicon -->
     <link rel="icon" href="./favicon.svg">
 
     <!-- Folhas de estilo -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="./resources/css/styles.min.css" rel="stylesheet" media="screen">
+    <link href="./css/styles.css" rel="stylesheet" media="screen">
 
     <!-- Manifesto -->
     <link rel="manifest" href="./manifest.webmanifest">
-
-    <!-- <link rel="canonical" href="https://ednilsonrobert.github.io/"> -->
 </head>
 
-<body>
-    <main class="page flex-column">
+<body class="body">
+    <main class="card">
+        <figure class="brand card-header">
+            <svg viewBox="0 0 256 256" class="brand-image">
+                <g>
+                    <path d=" M 155.826 122.435 L 244.87 122.435 C 251.013 122.435 256 127.422 256 133.565 L 256 222.609 C 256 228.752 251.013 233.739 244.87 233.739 L 155.826 233.739 C 149.683 233.739 144.696 228.752 144.696 222.609 L 144.696 133.565 C 144.696 127.422 149.683 122.435 155.826 122.435 Z " fill="rgb(81,179,92)"/>
+                    <path d=" M 33.391 144.696 L 122.435 144.696 C 128.578 144.696 133.565 149.683 133.565 155.826 L 133.565 244.87 C 133.565 251.013 128.578 256 122.435 256 L 33.391 256 C 27.248 256 22.261 251.013 22.261 244.87 L 22.261 155.826 C 22.261 149.683 27.248 144.696 33.391 144.696 Z " fill="rgb(46,131,195)"/>
+                    <path d=" M 133.565 0 L 222.609 0 C 228.752 0 233.739 4.987 233.739 11.13 L 233.739 100.174 C 233.739 106.317 228.752 111.304 222.609 111.304 L 133.565 111.304 C 127.422 111.304 122.435 106.317 122.435 100.174 L 122.435 11.13 C 122.435 4.987 127.422 0 133.565 0 Z " fill="rgb(255,205,54)"/>
+                    <path d=" M 11.13 22.261 L 100.174 22.261 C 106.317 22.261 111.304 27.248 111.304 33.391 L 111.304 122.435 C 111.304 128.578 106.317 133.565 100.174 133.565 L 11.13 133.565 C 4.987 133.565 0 128.578 0 122.435 L 0 33.391 C 0 27.248 4.987 22.261 11.13 22.261 Z " fill="rgb(220,20,60)"/>
+                </g>
+            </svg>
+        </figure>
 
-        <header class="banner flex-center">
-            <figure class="brand">
-                <svg viewBox="0 0 256 256" class="brand-image">
-                    <g>
-                        <path d=" M 155.826 122.435 L 244.87 122.435 C 251.013 122.435 256 127.422 256 133.565 L 256 222.609 C 256 228.752 251.013 233.739 244.87 233.739 L 155.826 233.739 C 149.683 233.739 144.696 228.752 144.696 222.609 L 144.696 133.565 C 144.696 127.422 149.683 122.435 155.826 122.435 Z " fill="rgb(81,179,92)"/>
-                        <path d=" M 33.391 144.696 L 122.435 144.696 C 128.578 144.696 133.565 149.683 133.565 155.826 L 133.565 244.87 C 133.565 251.013 128.578 256 122.435 256 L 33.391 256 C 27.248 256 22.261 251.013 22.261 244.87 L 22.261 155.826 C 22.261 149.683 27.248 144.696 33.391 144.696 Z " fill="rgb(46,131,195)"/>
-                        <path d=" M 133.565 0 L 222.609 0 C 228.752 0 233.739 4.987 233.739 11.13 L 233.739 100.174 C 233.739 106.317 228.752 111.304 222.609 111.304 L 133.565 111.304 C 127.422 111.304 122.435 106.317 122.435 100.174 L 122.435 11.13 C 122.435 4.987 127.422 0 133.565 0 Z " fill="rgb(255,205,54)"/>
-                        <path d=" M 11.13 22.261 L 100.174 22.261 C 106.317 22.261 111.304 27.248 111.304 33.391 L 111.304 122.435 C 111.304 128.578 106.317 133.565 100.174 133.565 L 11.13 133.565 C 4.987 133.565 0 128.578 0 122.435 L 0 33.391 C 0 27.248 4.987 22.261 11.13 22.261 Z " fill="rgb(220,20,60)"/>
-                    </g>
-                </svg>
-            </figure>
-        </header>
-
-        <article class="container flex-center">
-            <h1 class="text-display text-large" itemprop="name">Ednilson Robert</h1>
-            <h2 class="caption to-uppercase text-ghost-50" itemprop="jobTitle">Desenvolvedor Web Front-end</h2>
-            <p class="caption to-uppercase text-ghost-50" itemprop="address">
-                Barueri, Brasil
+        <article class="card-content">
+            <h1 class="text-display text-display-3 text-center" itemprop="name">Ednilson Robert</h1>
+            <h2 class="text-display text-display-4 text-center" itemprop="jobTitle">Desenvolvedor Web Front-end</h2>
+            <p class="text has-icon" itemprop="description">
+                <ion-icon class="text-icon" name="cafe"></ion-icon>
+                <span>Interesse por desenvolvimento Web, engenharia de software, desenvolvimento ágil, computação evolutiva e novas tecnologias.<code>_</code></span>
             </p>
-            <p class="text-common" itemprop="description">
-                Interesse por desenvolvimento Web, engenharia de software, desenvolvimento ágil, computação evolutiva e novas tecnologias.<code>_</code>
+            <p class="text has-icon" itemprop="address">
+                <ion-icon class="text-icon" name="pin"></ion-icon>
+                <span>Barueri, Brasil</span>
             </p>
         </article>
 
-        <footer class="toolbar">
-            <div class="bottom-navigation grid">
-                <a class="caption flex-center to-uppercase" title="Visitar https://ednilsonrobert.dev" href="https://ednilsonrobert.dev/" target="_blank" rel="external noopener" itemprop="url">
-                    <ion-icon class="caption-icon text-ghost-50" name="globe-outline"></ion-icon>
-                    <span class="caption-label">Website</span>
-                </a>
-                <a class="caption flex-center to-uppercase" title="Ver perfil no GitHub" href="https://github.com/EdnilsonRobert" target="_blank" rel="external noopener" itemprop="url">
-                    <ion-icon class="caption-icon text-ghost-50" name="logo-github"></ion-icon>
-                    <span class="caption-label">GitHub</span>
-                </a>
-                <a class="caption flex-center to-uppercase" title="Enviar email" href="mailto:frontend@ednilsonrobert.dev" itemprop="email">
-                    <ion-icon class="caption-icon text-ghost-50" name="mail"></ion-icon>
-                    <span class="caption-label">Email</span>
-                </a>
-            </div>
+        <section class="card-section">
+            <p class="text-center">
+                <span>Visite</span>
+                <a class="link text-display headline-3" href="https://ednilsonrobert.dev">https://ednilsonrobert.dev</a>
+            </p>
+        </section>
+
+        <footer class="card-footer">
+            <a class="button has-icon" title="Visitar https://ednilsonrobert.dev" href="https://ednilsonrobert.dev/" target="_blank" rel="external noopener" itemprop="url">
+                <ion-icon class="button-icon" name="globe-outline"></ion-icon>
+                <span class="button-label">Website</span>
+            </a>
+            <a class="button has-icon" title="Ver perfil no GitHub" href="https://github.com/EdnilsonRobert" target="_blank" rel="external noopener" itemprop="url">
+                <ion-icon class="button-icon" name="logo-github"></ion-icon>
+                <span class="button-label">GitHub</span>
+            </a>
+            <a class="button has-icon" title="Enviar email" href="mailto:frontend@ednilsonrobert.dev" itemprop="email">
+                <ion-icon class="button-icon" name="mail"></ion-icon>
+                <span class="button-label">Email</span>
+            </a>
         </footer>
-
     </main>
-
 </body>
+
+
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
 </html>

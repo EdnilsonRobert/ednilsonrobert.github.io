@@ -1,5 +1,4 @@
-_TEMP
-.idea
+TEMP
 node_modules
 
 *.log
