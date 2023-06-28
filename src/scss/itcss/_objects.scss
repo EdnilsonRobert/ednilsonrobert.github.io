@@ -116,7 +116,7 @@ html {
   transition: color 100ms linear;
 }
 
-.link:hover, .link:active { color: var(--spring-50); }
+.link:hover { color: var(--spring-50); }
 
 .card-footer {
   display: flex;
