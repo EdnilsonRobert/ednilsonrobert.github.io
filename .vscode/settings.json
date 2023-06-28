@@ -1,0 +1,19 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/resources/css",
+      "savePathReplacementPairs": null
+    }
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "/**/node_modules/**", "/.vscode/**"
+  ],
+  // "liveSassCompile.settings.includeItems": [],
+  // "liveSassCompile.settings.partialsList": [],
+  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.autoprefix": false,
+  "liveSassCompile.settings.forceBaseDirectory": "/src/scss",
+  "liveSassCompile.settings.useNewCompiler": false
+}
