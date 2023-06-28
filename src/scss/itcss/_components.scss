@@ -27,7 +27,7 @@
   text-transform: uppercase;
 }
 
-.button:hover {
-  border-color: var(--ui-color-30);
-  color: var(--ui-color-10);
+.button:hover, .button:active {
+  border-color: var(--spring-30);
+  color: var(--spring-30);
 }

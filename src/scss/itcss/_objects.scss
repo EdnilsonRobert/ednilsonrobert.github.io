@@ -47,7 +47,7 @@
 .text-icon {
   height: 2.4rem;
   vertical-align: baseline;
-  color: var(--ui-color-5);
+  color: var(--spring-30);
 }
 
 .brand { width: 9.6rem; }
@@ -89,14 +89,14 @@ html {
 .card-title {
   padding-top: var(--space);
   border-top: .1rem solid var(--ui-color-40);
-  color: var(--ui-color-5);
+  color: var(--spring-30);
 }
 
 .card-subtitle {
   margin-top: var(--space);
   padding-bottom: var(--space);
   border-bottom: .1rem solid var(--ui-color-40);
-  color: var(--ui-color-5);
+  color: var(--spring-30);
 }
 
 .card-content .text { margin-top: var(--space); }
@@ -106,13 +106,17 @@ html {
   margin-bottom: var(--space-xl);
 }
 
-.card-section span, .card-section a {
+.card-section span, .link {
   display: block;
 }
 
-.card-section a {
+.link {
   margin-top: var(--space);
+  color: var(--spring-30);
+  transition: color 100ms linear;
 }
+
+.link:hover, .link:active { color: var(--spring-50); }
 
 .card-footer {
   display: flex;
