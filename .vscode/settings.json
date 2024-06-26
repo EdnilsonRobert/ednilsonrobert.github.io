@@ -1,19 +1,20 @@
 {
-  "liveSassCompile.settings.formats": [
-    {
-      "format": "compressed",
-      "extensionName": ".min.css",
-      "savePath": "/resources/css",
-      "savePathReplacementPairs": null
-    }
-  ],
-  "liveSassCompile.settings.excludeList": [
-    "/**/node_modules/**", "/.vscode/**"
-  ],
-  // "liveSassCompile.settings.includeItems": [],
-  // "liveSassCompile.settings.partialsList": [],
-  "liveSassCompile.settings.generateMap": true,
-  "liveSassCompile.settings.autoprefix": false,
-  "liveSassCompile.settings.forceBaseDirectory": "/src/scss",
-  "liveSassCompile.settings.useNewCompiler": false
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features",
+    "editor.tabSize": 4,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80
+  },
+  "css.format.newlineBetweenRules": false,
+  "css.format.newlineBetweenSelectors": false,
+  "css.lint.zeroUnits": "warning",
+
+  "[scss]": {
+    "editor.defaultFormatter": "vscode.css-language-features",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120
+  },
+  "scss.format.newlineBetweenRules": false,
+  "scss.format.newlineBetweenSelectors": false
 }

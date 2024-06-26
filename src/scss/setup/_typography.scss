@@ -1,0 +1,29 @@
+/** ============================================================================
+    Mizu Group: Setup
+    File: Typography
+============================================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+:root {
+  // FONT WEIGHT ---------------------------------------------------------------
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  // FONT SIZE -----------------------------------------------------------------
+  --font-size-xs: 1.2rem;
+  --font-size-sm: 1.4rem;
+  --font-size-rg: 1.6rem;
+
+  // FONT FAMILY ---------------------------------------------------------------
+  --font-stack-sans: 'Oxygen', sans-serif;
+  --font-stack-monospace: 'Source Code Pro', ui-monospace, monospace;
+
+  // LINE HEIGHT ---------------------------------------------------------------
+  --line-height-sm: 1.25;
+  --line-height-rg: 1.5;
+  --line-height-md: 2;
+}
+
+/* END OF FILE ============================================================== */

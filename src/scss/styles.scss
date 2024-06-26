@@ -1,18 +1,17 @@
 /** ============================================================================
-    Project: Ednison Robert | Github Pages
+    Project: Mizu CSS
     ----------------------------------------------------------------------------
-    @description: Página pessoal de Ednilson Robert
-    @author: EdnilsonRobert <frontend@ednilsonrobert.dev>
+    @description: Biblioteca CSS para uso pessoal de EdnilsonRobert
+    @author: EdnilsonRobert
 ============================================================================= */
 
+@use './setup/color-palette';
+@use './setup/typography';
+@use './setup/variables';
 
-@use './itcss/settings';
-@use './itcss/tools';
-@use './itcss/generics';
-@use './itcss/base';
-@use './itcss/objects';
-@use './itcss/components';
-@use './itcss/utils';
+@use './base/reset';
+@use './base/normalize';
 
+@use './elements/page';
 
-/* END OF FILE -------------------------------------------------------------- */
+/* END OF FILE ============================================================== */

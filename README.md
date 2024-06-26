@@ -1,19 +1,25 @@
+![Ednilson Robert](resources/images/edrpio-github-profile.png)
+
 # Página pessoal de Ednilson Robert
 
-## Desenvolvedor Web Front-end
+## Desenvolvimento Web & Design
 
-Desenvolvedor Web front-end desde 2008.
+> **Criação e otimização de páginas web e design gráfico**
 
-Interesse por desenvolvimento Web, engenharia de software, desenvolvimento ágil, computação evolutiva e novas tecnologias._
+Sou Ednilson, freelancer, trabalho com desenvolvimento web desde 2008 e neste período passei por algumas agências de publicidade e setor financeiro.
 
-Site pessoal: [https://ednilsonrobert.dev](https://ednilsonrobert.dev)
+Mantenho interesse constante em desenvolvimento web, engenharia de software, computação evolutiva, metodologia ágil e novas tecnologias._
 
-
+> [!TIP]
+> Disponível para:
+> - Desenvolvimento e manutenção de sites
+> - Freelance para agências de marketing
+> - Contratação temporária para empresas
 
 ---
+
 Desenvolvido por [Ednilson Robert](https://ednilsonrobert.github.io/).
 
-Sugestões? Envie email para <frontend@ednilsonrobert.dev>.
-
 ---
+
 Licença: MIT

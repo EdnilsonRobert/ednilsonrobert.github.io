@@ -1,0 +1,23 @@
+{
+  "name": "github-page",
+  "version": "2.0.1",
+  "description": "Cartão pessoal de Ednilson Robert",
+  "main": "main.js",
+  "scripts": {
+    "start": "sass --watch --style=compressed src/scss:resources/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdnilsonRobert/ednilsonrobert.github.io.git"
+  },
+  "keywords": [
+    "desenvolvimento",
+    "otimização",
+    "freelance"
+  ],
+  "author": "EdnilsonRobert",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.77.6"
+  }
+}

@@ -1,0 +1,59 @@
+/** ============================================================================
+    Mizu Group: Base
+    File: Normalize
+============================================================================= */
+
+// Basic -----------------------------------------------------------------------
+html, body {
+  min-height: 100dvh;
+}
+
+html {
+  font-size: 62.5%;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-size-adjust: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--main-background-color);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-rg);
+  font-family: var(--font-stack-sans);
+  line-height: var(--line-height-rg);
+  color: var(--main-font-color);
+}
+
+p {
+  font-size: var(--font-size-rg);
+  word-wrap: break-word;
+}
+
+// Text formatting -------------------------------------------------------------
+a {
+  text-decoration: unset;
+  color: inherit;
+  transition: all 200ms linear;
+  cursor: default;
+}
+
+code {
+  display: inline-block;
+  font-size: inherit;
+  font-family: var(--font-stack-monospace);
+  line-height: inherit;
+}
+
+small {
+  font-size: 1.3rem;
+}
+
+// Images ans multimedia -------------------------------------------------------
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* END OF FILE ============================================================== */

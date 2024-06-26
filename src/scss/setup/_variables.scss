@@ -1,0 +1,34 @@
+/** ============================================================================
+    Mizu Group: Setup
+    File: Variables
+============================================================================= */
+
+:root {
+  // SPACING -------------------------------------------------------------------
+  --space-xs: calc(var(--space) / 4);
+  --space-sm: calc(var(--space) / 2);
+  --space: 2.4rem;
+  --space-md: calc(var(--space) * 2);
+  --space-lg: calc(var(--space) * 2.5);
+  --space-xl: calc(var(--space) * 3);
+
+  --hero-gap: var(--space-xl);
+  --brand-unity: 1.8rem;
+
+  @media (min-width: 48em) {
+    --brand-unity: 2.4rem;
+  }
+
+  // COLOR SCHEME --------------------------------------------------------------
+  --main-background-color: var(--gray-light);
+  --main-font-color: var(--ui-color-6);
+  --primary-color: var(--ocean-blue);
+  --secondary-color: var(--ui-color-5);
+  --terciary-color: var(--ui-color-4);
+
+  --shadow-outside: 0 .2rem .4rem rgba(0, 0, 0, .15);
+  --shadow-outside-hover: 0 .3rem .6rem rgba(0, 0, 0, .15);
+  --shadow-inside: 0 .2rem .4rem rgba(0, 0, 0, .15) inset;
+}
+
+/* END OF FILE ============================================================== */

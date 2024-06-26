@@ -1,0 +1,28 @@
+/** ============================================================================
+    Mizu Group: Base
+    File: Reset
+============================================================================= */
+
+// ALL HTML TAGS ---------------------------------------------------------------
+// Basic -------------------------------
+body, html, h1, h2, h3, h4, h5, h6, p,
+// Semantic sectioning -----------------
+address, article, aside, footer, header, main, nav, search, section,
+// Content block -----------------------
+div, figcaption, figure, hr,
+// Text formatting ---------------------
+a, b, br, code, i, small, span, strong, wbr,
+// Images ans multimedia ---------------
+img, svg,
+// Pseudo-elements ---------------------
+::before, ::after {
+  box-sizing: border-box;
+  margin: unset;
+  padding: unset;
+}
+
+ion-icon {
+  box-sizing: content-box;
+}
+
+/* END OF FILE ============================================================== */

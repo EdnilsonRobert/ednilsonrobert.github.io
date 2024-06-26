@@ -1,21 +1,27 @@
 {
-  "short_name": "Ednilson Robert",
   "name": "Ednilson Robert",
-  "description": "Página pessoal de Ednilson Robert",
+  "short_name": "Ednilson",
+  "description": "Card pessoal de Ednilson Robert",
+  "start_url": "./",
+  "scope": "./",
+  "id": "./",
+  "display": "standalone",
+  "display_override": ["minimal-ui"],
+  "orientation": "portrait",
+  "theme_color": "#00465e",
+  "background_color": "#d7dbdf",
   "icons": [
     {
-      "src":"./resources/images/logo.svg",
-      "sizes": "256x256",
-      "type": "image/svg+xml"
-    },
-    {
-      "src":"./resources/images/logo.svg",
+      "src": "./resources/images/edrpio-icon.svg",
       "sizes": "512x512",
       "type": "image/svg+xml"
     }
   ],
-  "start_url": "./",
-  "background_color": "#22303d",
-  "theme_color": "#22303d",
-  "display": "standalone"
+
+  "protocol_handlers": [
+    {
+      "protocol": "web+profile",
+      "url": "./?type=%s"
+    }
+  ]
 }
